@@ -2,7 +2,6 @@
 const getResponse = async ()=>{
 let response = await fetch('https://jsonplaceholder.typicode.com/posts');
 let content = await response.json();
-content = content.splice(0, 100);
 const posts = document.querySelector('#posts')
 let key;
 for(key in content) {
